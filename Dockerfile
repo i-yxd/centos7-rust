@@ -10,4 +10,4 @@ RUN yum -y update && \
 RUN mkdir /rust
 WORKDIR /rust
 
-RUN curl https://sh.rustup.rs -sSf | sh
+RUN sh -c "curl https://sh.rustup.rs -sSf | sh"
